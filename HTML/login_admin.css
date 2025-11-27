@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/*1. Admin Login Webpage*/
+
+body {
+    background-color: #104e73;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.admin {
+    width: 380px;
+    padding: 30px;
+    background: #0da0f4;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 25px;
+    font-family: "Unica One", sans-serif;
+    font-size: 50px;
+
+    }
+
+/* Input Fields */
+.input-box {
+    width: 90%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    background: white;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: Playfair Display, serif; 
+}
+
+/* Login button */
+.login-btn {
+    width: 90%;
+    padding: 12px 20px;
+    background: #0b679e;
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: Playfair Display, serif; 
+}
+
+
+/*2. Admin Login Webpage*/

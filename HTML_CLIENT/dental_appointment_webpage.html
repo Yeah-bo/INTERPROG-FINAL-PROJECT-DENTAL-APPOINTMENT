@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Appointment - Patient View</title>
+    <link rel="stylesheet" href="dental_style.css" />
+    <link rel="icon" type="image/png" href="/images/icon.png">
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <!-- LEFT PANEL -->
+        <div class="left-panel">
+            <form class="form-left">
+                <input type="text" placeholder="Name" />
+                <input type="number" placeholder="Age" min="1" />
+                <input type="text" placeholder="Contact No." />
+                <select>
+                    <option>Select Dentist</option>
+                    <option>Dr. Santos</option>
+                    <option>Dr. Reyes</option>
+                    <option>Dr. Cruz</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
+            <div class="date-time-group">
+
+                <!-- DATE FIELD -->
+                <div class="input-icon date-field">
+                    <input type="text" placeholder="Preferred Date" readonly />
+                    <span class="icon">📅</span>
+                    <div class="custom-calendar" id="calendar">
+                        <div class="calendar-header">
+                            <button id="prevMonth">&lt;</button>
+                            <span id="calendarMonth"></span>
+                            <button id="nextMonth">&gt;</button>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="week-days">
+                                <div>M</div><div>T</div><div>W</div><div>Th</div>
+                                <div>F</div><div>Sa</div><div>Su</div>
+                            </div>
+                            <div class="dates-grid" id="datesGrid"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIME FIELD -->
+                <div class="input-icon time-field">
+                    <input type="text" placeholder="Preferred Time" readonly />
+                    <span class="icon">⏰</span>
+                    <div class="custom-timepicker" id="timepicker">
+                        <h4>Preferred Time</h4>
+                        <div class="time-options">
+                            <label><input type="radio" name="apptTime" value="9:00 AM – 10:00 AM"> 9:00 AM – 10:00 AM</label>
+                            <label><input type="radio" name="apptTime" value="10:00 AM – 11:00 AM"> 10:00 AM – 11:00 AM</label>
+                            <label><input type="radio" name="apptTime" value="1:00 PM – 2:00 PM"> 1:00 PM – 2:00 PM</label>
+                            <label><input type="radio" name="apptTime" value="2:00 PM – 3:00 PM"> 2:00 PM – 3:00 PM</label>
+                            <label><input type="radio" name="apptTime" value="3:00 PM – 4:00 PM"> 3:00 PM – 4:00 PM</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="schedule-btn">SCHEDULE APPOINTMENT</button>
+        </div>
+
+    </div>
+
+    <!-- CONFIRMATION OVERLAY -->
+    <div class="confirmation-overlay" id="confirmationOverlay">
+        <div class="confirmation-modal" id="confirmationModal">
+            <!-- Content injected via JS -->
+        </div>
+    </div>
+
+    <script src="dental_script.js"></script>
+</body>
+</html>
